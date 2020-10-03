@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!--navigation bar-->
+    <nav>
+      <div class="burger">
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+      </div>
+      <i class="fas fa-arrow-circle-left" onclick="backFunc()"></i>
+      <div class="menu">
+        <div id="search">
+          <input type="text">
+          <a href="#">Search</a>
+        </div>
+        <a href="#" id="login" onclick="document.getElementById('id01').style.display='block'">Login</a>
+        <a href="#" id="signup" onclick="document.getElementById('id02').style.display='block'">Sign Up</a>
+      </div>
+    </nav>
+
+
+    <!--Login form-->
+    <div id="id01" class="modal1">
+  
+      <form class="modal-content1 animate1" action="#" method="post">
+        <div class="imgcontainer1">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+          <img src="img/img_avatar2.png" alt="Avatar" class="avatar1">
+        </div>
+    
+        <div class="container1">
+          <label for="uname1"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname1" required>
+    
+          <label for="psw1"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw1" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container1" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Cancel</button>
+          <span class="psw1">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <!--Login Form ends-->
+
+
+    <!--Sign Up form-->
+    <div id="id02" class="modal1">
+  
+      <form class="modal-content1 animate1" action="#" method="post">
+        <div class="imgcontainer1">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span>
+        </div>
+        
+        <div class="container1">
+          <h2 style="padding-bottom: 1em;">Sign Up</h2>
+          <label for="uname1"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname1" required>
+          
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="psw1"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw1" required>
+
+          <label for="psw2"><b>Retype Password</b></label>
+          <input type="text" placeholder="Enter password Again" name="psw2" required>
+
+        </div>
+    
+        <div class="container1" style="background-color:#f1f1f1">
+          <button type="submit" class="submitbtn">Sign Up</button>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <!--Sign Up form ends-->
+
+    <!--drop-->
+    <div class="drop">
+      <div class="search">
+        <input type="text"><a href="#">search</a>
+      </div>
+      <select>
+        <option>Category</option>
+        <option><a href="#">Astronomy</a></option>
+        <option><a href="#">Technology</a></option>
+        <option><a href="#">Quantum Mechanics</a></option>
+        <option><a href="#">Theory of Relativity</a></option>
+        <option><a href="#">Medical Tech</a></option>
+        <option><a href="#">Physics</a></option>
+        <option><a href="#">Evolution</a></option>
+        <option><a href="#">Astronomy</a></option>
+        <option><a href="#">Medical Tech</a></option>
+      </select>
+      <select>
+        <option><a href="#">Writers</a></option>
+        <option><a href="#">Carl Segan</a></option>
+        <option><a href="#">Richard Dockins</a></option>
+        <option><a href="#">Carl Segan</a></option>
+        <option><a href="#">Richard Dockins</a></option>
+        <option><a href="#">Carl Segan</a></option>
+        <option><a href="#">Richard Dockins</a></option>
+      </select>
+    </div>
+    
+
+    <div class="banner"><h1>The Universe</h1></div>
+
+    <!--Left Bar-->
+    <div class="row">
+      <div class="leftbar">
+        <div>
+          <h3>Category</h3>
+          <a href="#">Astronomy</a>
+          <a href="#">Technology</a>
+          <a href="#">Quantum Mechanics</a>
+          <a href="#">Theory of Relativity</a>
+          <a href="#">Medical Tech</a>
+          <a href="#">Physics</a>
+          <a href="#">Evolution</a>
+          <a href="#">Astronomy</a>
+          <a href="#">Astronomy</a>
+          <a href="#">Astronomy</a>
+        </div>
+      </div>
+
+        <!--Post Section-->
+      <div id="postSection">
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>How Evolution Works</h2>
+          <div class="writer">Richard Dockins</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+
+        <div class="post">
+          <h2>The Black Hole</h2>
+          <div class="writer">Carl Segan</div>
+          <div class="postContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste excepturi dolor provident porro iure, natus saepe id laboriosam aspernatur officiis error commodi dignissimos, hic accusamus illo rem earum vero? Voluptates. <div class="extra"></div></div>
+          <div class="comm"></div>
+        </div>
+      </div>
+
+      <div class="writers">
+        <div>
+          <h3>Top Writers</h3>
+          <a href="#">Carl Segan</a>
+          <a href="#">Richard Dockins</a>
+          <a href="#">Carl Segan</a>
+          <a href="#">Richard Dockins</a>
+          <a href="#">Carl Segan</a>
+          <a href="#">Richard Dockins</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/311bac8f6a.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

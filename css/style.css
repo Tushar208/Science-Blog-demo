@@ -1,0 +1,395 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background: rgba(0, 0, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em 0em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+nav .slice {
+  width: 20px;
+  height: 3px;
+  background: #390449;
+  margin: 2px;
+}
+
+nav .burger {
+  display: none;
+}
+
+nav .menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+nav a, nav i {
+  text-decoration: none;
+  color: #390449;
+  padding: 0px .5em;
+}
+
+nav i {
+  font-size: 1.4em;
+}
+
+nav #search {
+  padding: 0px 2em;
+}
+
+nav a:hover, nav i:hover {
+  color: #830c0c;
+}
+
+#id01, #id02 {
+  /* Set a style for all buttons */
+  /* Extra styles for the cancel button */
+  /* Center the image and position the close button */
+  /* Modal Content/Box */
+  /* The Close Button (x) */
+  /* Add Zoom Animation */
+}
+
+#id01 input[type=text], #id01 input[type=password], #id02 input[type=text], #id02 input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#id01 button, #id02 button {
+  background-color: rgba(0, 0, 255, 0.6);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#id01 button:hover, #id02 button:hover {
+  opacity: 0.8;
+}
+
+#id01 .cancelbtn1, #id02 .cancelbtn1 {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+#id01 .submitbtn, #id02 .submitbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+#id01 .imgcontainer1, #id02 .imgcontainer1 {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+#id01 img.avatar1, #id02 img.avatar1 {
+  width: 20%;
+  border-radius: 50%;
+}
+
+#id01 .container1, #id02 .container1 {
+  padding: 16px;
+}
+
+#id01 span.psw1, #id02 span.psw1 {
+  float: right;
+  padding-top: 16px;
+}
+
+#id01 .modal-content1, #id02 .modal-content1 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+#id01 .close1, #id02 .close1 {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#id01 .close1:hover,
+#id01 .close1:focus, #id02 .close1:hover,
+#id02 .close1:focus {
+  color: red;
+  cursor: pointer;
+}
+
+#id01 .animate1, #id02 .animate1 {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Modal (background) */
+.modal1 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 255, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.drop {
+  background: rgba(0, 0, 255, 0.3);
+  padding: 1em 0em 1em 1em;
+  display: none;
+}
+
+.drop select {
+  display: block;
+  width: 160px;
+  margin-top: 1em;
+  background: rgba(0, 0, 255, 0.1);
+  border: 0px;
+}
+
+.drop .search input {
+  background: #f7f7f7;
+  border: 0px;
+  border-radius: 5px;
+  height: 1.5em;
+}
+
+.drop .search a {
+  text-decoration: none;
+  background: rgba(0, 0, 255, 0.5);
+  border-radius: 5px;
+  margin-left: 1em;
+  color: white;
+  padding: 0em 0.3em 0.1em 0.3em;
+}
+
+.banner {
+  background: url("../img/banner.jpg");
+  background-size: cover;
+  height: 220px;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0cd481;
+  text-shadow: 2px 2px 1px black;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+      grid-template-areas: 'leftbar' 'post' 'writers';
+}
+
+.row .leftbar, .row .writers {
+  background: rgba(0, 0, 255, 0.3);
+  padding: 1.3em;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.row .leftbar a, .row .writers a {
+  display: block;
+  text-decoration: none;
+  padding: 1em 0px;
+  color: black;
+  font-weight: bold;
+}
+
+.row .leftbar h3, .row .writers h3 {
+  padding-top: 3em;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+}
+
+.row .leftbar a:hover, .row .writers a:hover {
+  color: rgba(0, 0, 255, 0.8);
+}
+
+#postSection {
+  height: 100vh;
+  overflow-y: scroll;
+  background: rgba(0, 0, 255, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+.post {
+  border: 3px solid purple;
+  margin: 1em;
+  border-radius: 10px;
+  padding: 0.7em;
+  cursor: pointer;
+}
+
+.post .writer {
+  padding: 0.7em 0em;
+  color: gray;
+}
+
+.userCmt form {
+  margin-top: 50px;
+}
+
+.userCmt form input {
+  width: 70%;
+  margin: 0.4em;
+  padding: 1em;
+  border: 2px solid purple;
+  border-radius: 7px;
+}
+
+.userCmt form button {
+  all: unset;
+  padding: 0.3em;
+  background: rgba(128, 0, 128, 0.7);
+  -webkit-box-shadow: 0px;
+          box-shadow: 0px;
+  border-radius: 5px;
+  color: white;
+}
+
+.userCmt form button:hover {
+  background: rgba(128, 0, 128, 0.9);
+}
+
+.comm .comment {
+  margin: 1em;
+  border-top: 1px solid purple;
+}
+
+.comm .comment div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comm .comment div img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.comm .comment div div {
+  display: block;
+  padding-left: 0.7em;
+}
+
+.comm .comment div div p {
+  font-size: 0.7em;
+  color: gray;
+  padding-top: 0.7em;
+}
+
+.comm .comment p {
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 576px) {
+  nav {
+    padding-left: 1.5em;
+    padding-right: 1em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav #search {
+    display: none;
+  }
+  nav .burger {
+    display: block;
+  }
+  .row {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .row .leftbar, .row .writers {
+    display: none;
+  }
+  #id01 span.psw1 {
+    display: block;
+    float: none;
+  }
+  #id01 .cancelbtn1 {
+    width: 100%;
+  }
+  #id02 .cancelbtn2, #id02 .signupbtn2 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
